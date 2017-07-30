@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+public class principal {
+		public static void main(String[] args) {
+			usuario u1 = new usuario("Antonio", "Justo sierra" , "2351068248" , "PEMA970308HOCRNN06");
+			String name=JOptionPane.showInputDialog("Ingresa tu nombre");
+			u1.setNombre(name);
+			JOptionPane.showMessageDialog(null, "El nombre es: "+u1.getNombre());
+			
+			String dir=JOptionPane.showInputDialog("Ingresa tu direccion");
+			u1.setNombre(dir);
+			JOptionPane.showMessageDialog(null, "tu direccion es: "+u1.getDireccion());
+			
+			String telf=JOptionPane.showInputDialog("Ingresa tu telefono");
+			u1.setNombre(telf);
+			JOptionPane.showMessageDialog(null, "Tu telefono es: "+u1.getTelefono());
+			
+			String curp=JOptionPane.showInputDialog("Ingresa tu curp");
+			u1.setNombre(curp);
+			JOptionPane.showMessageDialog(null, "tu curp es: "+u1.getCurp());
+}
+}
